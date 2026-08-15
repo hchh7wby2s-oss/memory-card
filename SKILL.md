@@ -1,9 +1,9 @@
 ---
-name: memory-card
-description: 会话记忆系统。每次会话自动记录用户对话内容为记忆卡，随时间自动压缩精简。存储位置按时长分级（一周内/一月内/超一月），文件名含梗概信息。触发条件：每次会话开始时检查并创建当天记忆卡，对话过程中实时记录，会话结束时保存。严禁编造不存在的记忆。当用户提到"回忆""之前说过""记忆"等关键词时触发检索。用户位于中国大陆，永远使用中文回复。
+name: ebbinghaus-memory
+description: 艾宾浩斯记忆系统。每次会话自动记录用户对话内容为记忆卡，随时间自动压缩精简。存储位置按时长分级（一周内/一月内/超一月），文件名含梗概信息。触发条件：每次会话开始时检查并创建当天记忆卡，对话过程中实时记录，会话结束时保存。严禁编造不存在的记忆。当用户提到"回忆""之前说过""记忆"等关键词时触发检索。用户位于中国大陆，永远使用中文回复。
 ---
 
-# 会话记忆系统 (Memory Card)
+# 艾宾浩斯记忆系统 (Memory Card)
 
 ## 核心原则
 
@@ -38,7 +38,7 @@ if [ ! -d "$memory_root" ]; then
 fi
 ```
 
-如果 `~/Documents/memory-card` 已存在且不是本 skill 创建的（比如用户自己的文件夹），则自动改为 `~/Documents/memory-codex/`。如果连 `memory-codex` 也存在，则继续尝试 `~/Documents/memory-ai/`。命名规则：`memory-{后缀}`，后缀依次为 `card` → `codex` → `ai` → `assistant` → `notes`。必须在日志中告诉用户最终使用了哪个文件夹路径，例如："记忆卡存储路径：`~/Documents/memory-codex/`"。
+如果 `~/Documents/memory-card` 已存在且不是本 skill 创建的（比如用户自己的文件夹），则自动改为 `~/Documents/memory-codex/`。如果连 `memory-codex` 也存在，则继续尝试 `~/Documents/memory-ai/`。命名规则：`memory-{后缀}`，后缀依次为 `card` → `codex` → `ai` → `assistant` → `notes`。必须在日志中告诉用户最终使用了哪个文件夹路径，例如："记忆存储路径：`~/Documents/memory-codex/`"。
 
 ## 记忆卡格式 (Markdown)
 

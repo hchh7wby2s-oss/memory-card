@@ -1,7 +1,7 @@
  interface:
-   display_name: "会话记忆"
-   short_description: "自动记录对话并随时间压缩记忆卡"
-   default_prompt: "使用 $memory-card 记录今天的重要对话内容"
+   display_name: "艾宾浩斯记忆"
+   short_description: "模拟人类遗忘曲线，自动记录对话并随时间压缩记忆"
+   default_prompt: "使用 $ebbinghaus-memory 记录今天的重要对话内容"
  
  policy:
    allow_implicit_invocation: true
