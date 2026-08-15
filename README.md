@@ -4,7 +4,7 @@
 
 **给 AI 模拟人类的记忆特点，贴合艾宾浩斯遗忘曲线，让 AI 越用越懂你。**
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![License: MIT](https://img.shields.io/badge/License--GPL%20v3-blue.svg)](LICENSE)
 [![Codex Skill](https://img.shields.io/badge/Platform-Codex%20Desktop-ff6b35.svg)](https://github.com/nicepkg/codex-desktop)
 
 </div>
@@ -116,7 +116,7 @@ cp -r ebbinghaus-memory ~/.codex/skills/
 
 ## 许可证
 
-[MIT License](LICENSE) — 自由使用，自由分享。
+[GPL-3.0 License](LICENSE) — 自由使用，自由分享。
 
 ---
 
