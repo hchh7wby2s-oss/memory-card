@@ -1,0 +1,21 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# Temp files
+*.tmp
+*.log
+
+# Node (if scripts use node)
+node_modules/
+package-lock.json
+
+# Memory card user data (never commit actual memory files)
+*.memory/
